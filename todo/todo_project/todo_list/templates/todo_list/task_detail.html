@@ -1,0 +1,46 @@
+<!-- todo_list/templates/todo_list/task_detail.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <!-- Add your CSS stylesheets or links here -->
+</head>
+<body>
+    <h1>Task Details</h1>
+
+    <table class="table">
+        <tr>
+            <th>Name:</th>
+            <td>{{ task.name }}</td>
+        </tr>
+        <tr>
+            <th>Status:</th>
+            <td>{{ task.status }}</td>
+        </tr>
+        <tr>
+            <th>Date Created:</th>
+            <td>{{ task.date_created }}</td>
+        </tr>
+        <tr>
+            <th>Date Completed:</th>
+            <td>{{ task.date_completed }}</td>
+        </tr>
+        <tr>
+            <th>Description:</th>
+            <td>{{ task.description }}</td>
+        </tr>
+        <tr>
+            <th>Category:</th>
+            <td>{{ task.category }}</td>
+        </tr>
+    </table>
+
+    <a href="{% url 'todo_list:task_list' %}" class="btn btn-primary">Back to Task List</a>
+
+    <!-- Add any additional content or scripts here -->
+
+</body>
+</html>
